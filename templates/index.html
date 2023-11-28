@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href="/pelin"> Pelin ne yapıyor öğrenmek ister misin?  </a>
+
+
+    <section>
+        <!-- Bunların genel form ögeleridir. -->
+        <form action="{{ url_for('sonuc') }}" method="post">
+
+            <div>
+                <label for="isim">İsmin:</label>
+                <input name="isim" type="text">
+            </div>
+            <div>
+                <label for="emaill">E-Mailiniz::</label>
+                <input name="emaill" type="email">
+            </div>
+            <div>
+                <label for="dosya">Task Dosyası:</label>
+                <input name="dosya" type="file">
+            </div>
+            <div>
+                <label for="tarih">Gönderim Tarihiniz:</label>
+                <input name="tarih" type="date">
+            </div>
+            <div>
+                <label for="renk">Sevdiğiniz rengi seçin:</label>
+                <input name="renk" type="color">
+            </div>
+            
+            <div>
+                <input type="submit">
+            </div>
+            
+
+        </form>
+    </section>
+</body>
+</html>
